@@ -1,10 +1,11 @@
+import StudentList from '../components/StudentList';
+
 const Home = () => {
-  return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the home page of our application.</p>
-    </div>
-  );
+    return (
+        <div>
+            <h1>Welcome to the Home Page</h1>
+        </div>
+    );
 };
 
 export default Home;

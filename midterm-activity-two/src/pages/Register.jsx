@@ -1,10 +1,12 @@
-const Home = () => {
-  return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is the home page of our application.</p>
-    </div>
-  );
+import StudentForm from '../components/StudentForm';
+
+const Register = () => {
+    return (
+        <div>
+            <h1>Register Student</h1>
+            <StudentForm />
+        </div>
+    );
 };
 
-export default Home;
+export default Register;
