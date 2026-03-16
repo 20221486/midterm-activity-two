@@ -1,5 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
+import './StudentDetails.css';
 
 const gpas = [3.0, 3.2, 3.5, 3.7, 4.0];
 
@@ -14,7 +15,7 @@ const StudentDetails = () => {
     };
 
     return (
-        <div>
+        <div className="student-details">
             <h2>Student Details</h2>
             <p>ID: {student.id}</p>
             <p>Name: {student.name}</p>

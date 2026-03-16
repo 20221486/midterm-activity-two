@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './StudentList.css';
 
 const students = Array.from({ length: 10 }, (_, i) => ({
     id: i + 1,
@@ -10,13 +11,22 @@ const students = Array.from({ length: 10 }, (_, i) => ({
 const StudentList = () => (
     <div>
         <h2>Student List</h2>
-        <ul>
-            {students.map(student => (
-                <li key={student.id}>
-                    ID: <Link to={`/student/${student.id}`}>{student.id}</Link> | Name: {student.name}
-                </li>
-            ))}
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                {students.map(student => (
+                    <tr key={student.id}>
+                        <td><Link to={`/student/${student.id}`}>{student.id}</Link></td>
+                        <td>{student.name}</td>
+                    </tr>
+                ))}
+            </tbody>
+        </table>
     </div>
 );
 

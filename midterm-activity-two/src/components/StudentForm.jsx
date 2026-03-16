@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./StudentForm.css";
 
 const initialState = {
@@ -44,44 +44,41 @@ const StudentForm = () => {
     };
 
     return (
-        <form onSubmit={handleSubmit} noValidate>
-            <div>
-                <label>
-                    Name:
-                    <input
-                        name="name"
-                        value={form.name}
-                        onChange={handleChange}
-                        type="text"
-                    />
-                </label>
-                {errors.name && <div style={{ color: "red" }}>{errors.name}</div>}
+        <form onSubmit={handleSubmit} noValidate className="student-form">
+            <div className="form-field">
+                <label className="form-label">Name:</label>
+                <input
+                    className="form-input"
+                    name="name"
+                    value={form.name}
+                    onChange={handleChange}
+                    type="text"
+                />
+                {errors.name && <div className="error-message">{errors.name}</div>}
             </div>
-            <div>
-                <label>
-                    Email:
-                    <input
-                        name="email"
-                        value={form.email}
-                        onChange={handleChange}
-                        type="email"
-                    />
-                </label>
-                {errors.email && <div style={{ color: "red" }}>{errors.email}</div>}
+            <div className="form-field">
+                <label className="form-label">Email:</label>
+                <input
+                    className="form-input"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    type="email"
+                />
+                {errors.email && <div className="error-message">{errors.email}</div>}
             </div>
-            <div>
-                <label>
-                    Course:
-                    <input
-                        name="course"
-                        value={form.course}
-                        onChange={handleChange}
-                        type="text"
-                    />
-                </label>
-                {errors.course && <div style={{ color: "red" }}>{errors.course}</div>}
+            <div className="form-field">
+                <label className="form-label">Course:</label>
+                <input
+                    className="form-input"
+                    name="course"
+                    value={form.course}
+                    onChange={handleChange}
+                    type="text"
+                />
+                {errors.course && <div className="error-message">{errors.course}</div>}
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" className="submit-button">Submit</button>
         </form>
     );
 };

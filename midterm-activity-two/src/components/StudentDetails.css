@@ -1,0 +1,20 @@
+.student-details {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.student-details h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.student-details p {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #555;
+}

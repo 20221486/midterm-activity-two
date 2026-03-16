@@ -1,32 +1,57 @@
-.navbar {
-    background: #2563eb;
-    padding: 0 24px;
+.student-form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-list {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+.form-field {
+  margin-bottom: 20px;
 }
 
-.navbar-item {
-    margin: 0 18px 0 0;
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
 }
 
-.navbar-item:last-child {
-    margin-right: 0;
+.form-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
 }
 
-.navbar-link {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 18px 0;
-    display: block;
-    transition: color 0.2s;
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-.navbar-link:hover {
-    color: #a5b4fc;
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
 }
